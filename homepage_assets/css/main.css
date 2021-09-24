@@ -15,7 +15,7 @@ small, strike, strong, sub, sup, tt, var, b,
 u, i, center, dl, dt, dd, ol, ul, li, fieldset,
 form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
-canvas, details, embed, figure, figcaption,
+canvas, details, embed, strongviolet, stronggreen, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
 	margin: 0;
@@ -177,6 +177,16 @@ input, select, textarea {
 
 	strong, b {
 		font-weight: 400;
+	}
+
+	strongviolet, b {
+		font-weight: 400;
+		color: #d243e6;
+	}
+
+	stronggreen, b {
+		font-weight: 400;
+		color: #43e69f;
 	}
 
 	em, i {
