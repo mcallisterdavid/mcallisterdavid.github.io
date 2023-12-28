@@ -184,6 +184,11 @@ input, select, textarea {
 		color: #d243e6;
 	}
 
+	strongyellow, b {
+		font-weight: 400;
+		color: #fcba03;
+	}
+
 	stronggreen, b {
 		font-weight: 400;
 		color: #43e09c;
