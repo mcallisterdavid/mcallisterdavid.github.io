@@ -42,9 +42,11 @@
 							</p>
 							<h1 class="hero-name">David McAllister</h1>
 							<p class="major">I'm a PhD student at UC Berkeley advised by Prof. <a href=https://people.eecs.berkeley.edu/~kanazawa/>Angjoo Kanazawa</a>. I'm interested in <strongyellow>generative modeling</strongyellow>, <stronggreen>robotics</stronggreen> and <strongviolet>imaging</strongviolet>.</p>
-							<ul class="actions stacked" hidden>
-								<li><a href="https://drive.google.com/file/d/1q3GfC_XXsr193J8Yl6V5vXq_PzovKH2-/view?usp=sharing" target="_blank" class="button big wide smooth-scroll-middle icon solid fa-download">Résumé</a></li>
-							</ul>
+								<!-- Restore this block after updating the resume link.
+								<ul class="actions stacked">
+									<li><a href="https://drive.google.com/file/d/1q3GfC_XXsr193J8Yl6V5vXq_PzovKH2-/view?usp=sharing" target="_blank" class="button big wide smooth-scroll-middle icon solid fa-download">Résumé</a></li>
+								</ul>
+								-->
 							<ul class="icons" hidden>
 								<li><a href="https://www.linkedin.com/in/davidrmcallister" target="_blank" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 								<li><a href="https://github.com/mcallisterdavid" target="_blank" class="icon brands style2 fa-github"></i><span class="label">Email</span></a></li>
@@ -60,12 +62,17 @@
 							</div>
 					</section>
 
-					<section class="wrapper style1 align-left">
-						<div class="inner">
-							<div class="publication-lead">
-								<div>
-									<h2>Selected Publications</h2>
-									<!-- <p>For the complete list, visit my Google Scholar profile.</p> -->
+						<section class="wrapper style1 align-left">
+							<div class="inner">
+								<div class="research-blurb">
+									<!-- <p>My research focuses on generative modeling and robotics.</p> -->
+									<p>I've studied <strong>scalable image synthesis with flow models</strong>, developing methods to train them across <strong>decentralized compute clusters</strong><sup class="research-ref"><a href="https://decentralizeddiffusion.github.io/" target="_blank" aria-label="Decentralized Diffusion Models project">1</a></sup> and to improve their <strong>RL post-training</strong><sup class="research-ref"><a href="https://mcallisterdavid.com/fdfo-blog/" target="_blank" aria-label="Finite Difference Flow Optimization project">2</a></sup>.</p>
+									<p>I've since applied these techniques to <strong>robot learning</strong>, including <strong>reinforcement learning with flow matching</strong><sup class="research-ref"><a href="https://flowreinforce.github.io/" target="_blank" aria-label="Flow Matching Policy Gradients project">3</a></sup> and learning <strong>context-aware humanoid locomotion</strong> from monocular video<sup class="research-ref"><a href="https://www.videomimic.net/" target="_blank" aria-label="VideoMimic project">4</a></sup> (<strong>CoRL Best Student Paper</strong>). Now, I'm training <strong>vision-language-action models</strong> on large-scale demonstration data.</p>
+								</div>
+								<div class="publication-lead">
+									<div>
+										<h2>Selected Publications</h2>
+										<!-- <p>For the complete list, visit my Google Scholar profile.</p> -->
 								</div>
 								<a href="https://scholar.google.com/citations?user=X5NSuikAAAAJ&hl=en" target="_blank" class="publication-scholar-link icon solid fa-graduation-cap">Google Scholar</a>
 							</div>

@@ -8346,6 +8346,39 @@ input, select, textarea {
 			margin-bottom: 0;
 		}
 
+	.research-blurb {
+		margin-bottom: 2rem;
+		max-width: 46rem;
+	}
+
+		.research-blurb strong {
+			color: #000000;
+			font-weight: 600;
+		}
+
+		.research-blurb p {
+			margin-bottom: 1rem;
+		}
+
+		.research-blurb p:last-child {
+			margin-bottom: 0;
+		}
+
+	.research-ref {
+		margin-left: 0.08rem;
+	}
+
+		.research-ref a {
+			color: rgba(0, 0, 0, 0.6);
+			font-size: 0.72em;
+			font-weight: 600;
+			text-decoration: none;
+		}
+
+		.research-ref a:hover {
+			color: #000000;
+		}
+
 	.publication-lead {
 		margin-bottom: 1rem;
 	}

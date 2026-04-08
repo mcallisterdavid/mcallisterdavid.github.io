@@ -84,6 +84,39 @@
 		}
 	}
 
+	.research-blurb {
+		margin-bottom: 2rem;
+		max-width: 46rem;
+
+		strong {
+			color: _palette(fg-bold);
+			font-weight: 600;
+		}
+
+		p {
+			margin-bottom: 1rem;
+		}
+
+		p:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.research-ref {
+		margin-left: 0.08rem;
+
+		a {
+			color: _palette(fg-light);
+			font-size: 0.72em;
+			font-weight: 600;
+			text-decoration: none;
+		}
+
+		a:hover {
+			color: _palette(fg-bold);
+		}
+	}
+
 	.publication-lead {
 		margin-bottom: 1rem;
 
