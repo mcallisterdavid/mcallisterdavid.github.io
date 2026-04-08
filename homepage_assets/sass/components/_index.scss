@@ -224,6 +224,10 @@
 		.pub-description {
 			color: _palette(fg);
 			margin-bottom: 0.35rem;
+
+			.pub-emphasis {
+				font-weight: 600;
+			}
 		}
 
 		.pub-authors {

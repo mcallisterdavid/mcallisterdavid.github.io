@@ -180,18 +180,18 @@ input, select, textarea {
 	}
 
 	strongviolet, b {
-		font-weight: 400;
-		color: #d243e6;
+		font-weight: 600;
+		color: #000000;
 	}
 
 	strongyellow, b {
-		font-weight: 400;
-		color: #fcba03;
+		font-weight: 600;
+		color: #000000;
 	}
 
 	stronggreen, b {
-		font-weight: 400;
-		color: #43e09c;
+		font-weight: 600;
+		color: #000000;
 	}
 
 	em, i {
@@ -8532,6 +8532,10 @@ input, select, textarea {
 			color: rgba(0, 0, 0, 0.75);
 			margin-bottom: 0.35rem;
 		}
+
+			.publication-list .pub-description .pub-emphasis {
+				font-weight: 600;
+			}
 
 		.publication-list .pub-authors {
 			color: rgba(0, 0, 0, 0.75);
