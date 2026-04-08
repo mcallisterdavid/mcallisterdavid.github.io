@@ -82,7 +82,7 @@ input, select, textarea {
 		-ms-overflow-style: scrollbar;
 	}
 
-	@media screen and (max-width: 480px) {
+			@media screen and (max-width: 480px) {
 
 		html, body {
 			min-width: 320px;
@@ -8322,7 +8322,8 @@ input, select, textarea {
 		border-top-color: rgba(0, 0, 0, 0.2);
 	}
 
-	.publication-lead {
+	.publication-lead,
+	.photo-stream-intro {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -8336,12 +8337,18 @@ input, select, textarea {
 		-ms-align-items: center;
 		align-items: center;
 		gap: 2rem;
-		margin-bottom: 1rem;
 	}
 
-		.publication-lead h2 {
+		.publication-lead h2,
+		.photo-stream-intro h2 {
+			font-family: 'Alegreya', serif;
+			font-weight: 400;
 			margin-bottom: 0;
 		}
+
+	.publication-lead {
+		margin-bottom: 1rem;
+	}
 
 		.publication-lead p {
 			margin-bottom: 0;
@@ -8350,7 +8357,8 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
-			.publication-lead {
+			.publication-lead,
+			.photo-stream-intro {
 				-moz-align-items: flex-start;
 				-webkit-align-items: flex-start;
 				-ms-align-items: flex-start;
@@ -8363,7 +8371,8 @@ input, select, textarea {
 
 		}
 
-	.publication-scholar-link {
+	.publication-scholar-link,
+	.photo-stream-link {
 		-moz-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -8381,11 +8390,13 @@ input, select, textarea {
 		text-transform: uppercase;
 	}
 
-		.publication-scholar-link:before {
+		.publication-scholar-link:before,
+		.photo-stream-link:before {
 			margin-right: 0.5rem;
 		}
 
-		.publication-scholar-link:hover {
+		.publication-scholar-link:hover,
+		.photo-stream-link:hover {
 			background-color: rgba(0, 0, 0, 0.05);
 			border-color: rgba(0, 0, 0, 0.2);
 			color: #000000;
@@ -8606,21 +8617,115 @@ input, select, textarea {
 				width: 100%;
 			}
 
-			.publication-list .pub-meta {
-				-moz-flex-direction: row;
-				-webkit-flex-direction: row;
-				-ms-flex-direction: row;
-				flex-direction: row;
+				.publication-list .pub-meta {
+					-moz-flex-direction: row;
+					-webkit-flex-direction: row;
+					-ms-flex-direction: row;
+					flex-direction: row;
 				-moz-flex-wrap: wrap;
 				-webkit-flex-wrap: wrap;
 				-ms-flex-wrap: wrap;
 				flex-wrap: wrap;
-				margin-bottom: 1rem;
-			}
+					margin-bottom: 1rem;
+				}
 
-			}
+				}
 
-/* Wrapper */
+	.photo-stream-shell {
+		max-width: 82rem;
+	}
+
+	.photo-stream-intro {
+		margin-bottom: 2.25rem;
+	}
+
+	.photo-stream-list {
+		display: grid;
+		align-items: start;
+		column-gap: 1.75rem;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		row-gap: 1.75rem;
+	}
+
+	.photo-stream-item {
+		margin: 0;
+		max-width: 32rem;
+		width: 100%;
+	}
+
+		.photo-stream-item:nth-child(odd) {
+			justify-self: start;
+		}
+
+		.photo-stream-item:nth-child(even) {
+			justify-self: end;
+			margin-top: 2.75rem;
+			max-width: 26rem;
+		}
+
+		.photo-stream-item:nth-child(3n) {
+			max-width: 28rem;
+		}
+
+		.photo-stream-item:nth-child(3n + 1) {
+			max-width: 34rem;
+		}
+
+		.photo-stream-item img {
+			display: block;
+			height: auto;
+			width: 100%;
+		}
+
+	.photo-stream-item.is-portrait {
+		max-width: 18rem;
+	}
+
+	@media screen and (max-width: 980px) {
+
+		.photo-stream-list {
+			column-gap: 1.25rem;
+			row-gap: 1.25rem;
+		}
+
+		.photo-stream-item,
+		.photo-stream-item.is-portrait,
+		.photo-stream-item:nth-child(even),
+		.photo-stream-item:nth-child(3n),
+		.photo-stream-item:nth-child(3n + 1) {
+			max-width: 100%;
+		}
+
+		.photo-stream-item:nth-child(even) {
+			margin-top: 1.5rem;
+		}
+
+	}
+
+	@media screen and (max-width: 736px) {
+
+		.photo-stream-intro {
+			margin-bottom: 1.5rem;
+		}
+
+		.photo-stream-list {
+			grid-template-columns: minmax(0, 1fr);
+			row-gap: 1.5rem;
+		}
+
+		.photo-stream-item,
+		.photo-stream-item.is-portrait,
+		.photo-stream-item:nth-child(even),
+		.photo-stream-item:nth-child(3n),
+		.photo-stream-item:nth-child(3n + 1) {
+			justify-self: stretch;
+			margin-top: 0;
+			max-width: 100%;
+		}
+
+	}
+
+	/* Wrapper */
 
 	#wrapper {
 		background-color: inherit;

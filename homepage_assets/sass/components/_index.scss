@@ -65,20 +65,17 @@
 
 	@include color-index;
 
-	.publication-lead {
+	.publication-lead,
+	.photo-stream-intro {
 		@include vendor('display', 'flex');
 		@include vendor('justify-content', 'space-between');
 		@include vendor('align-items', 'center');
 		gap: 2rem;
-		margin-bottom: 1rem;
 
 		h2 {
+			font-family: 'Alegreya', serif;
+			font-weight: 400;
 			margin-bottom: 0;
-		}
-
-		p {
-			margin-bottom: 0;
-			max-width: 42rem;
 		}
 
 		@include breakpoint('<=small') {
@@ -87,7 +84,17 @@
 		}
 	}
 
-	.publication-scholar-link {
+	.publication-lead {
+		margin-bottom: 1rem;
+
+		p {
+			margin-bottom: 0;
+			max-width: 42rem;
+		}
+	}
+
+	.publication-scholar-link,
+	.photo-stream-link {
 		@include vendor('transition', (
 			'background-color #{_duration(transition)} ease-in-out',
 			'border-color #{_duration(transition)} ease-in-out',
@@ -294,5 +301,95 @@
 				margin-bottom: 1rem;
 			}
 
+		}
+	}
+
+	.photo-stream-shell {
+		max-width: 82rem;
+	}
+
+	.photo-stream-intro {
+		margin-bottom: 2.25rem;
+	}
+
+	.photo-stream-list {
+		display: grid;
+		align-items: start;
+		column-gap: 1.75rem;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		row-gap: 1.75rem;
+	}
+
+	.photo-stream-item {
+		margin: 0;
+		max-width: 32rem;
+		width: 100%;
+
+		&:nth-child(odd) {
+			justify-self: start;
+		}
+
+		&:nth-child(even) {
+			justify-self: end;
+			margin-top: 2.75rem;
+			max-width: 26rem;
+		}
+
+		&:nth-child(3n) {
+			max-width: 28rem;
+		}
+
+		&:nth-child(3n + 1) {
+			max-width: 34rem;
+		}
+
+		img {
+			display: block;
+			height: auto;
+			width: 100%;
+		}
+	}
+
+	.photo-stream-item.is-portrait {
+		max-width: 18rem;
+	}
+
+	@include breakpoint('<=medium') {
+		.photo-stream-list {
+			column-gap: 1.25rem;
+			row-gap: 1.25rem;
+		}
+
+		.photo-stream-item,
+		.photo-stream-item.is-portrait,
+		.photo-stream-item:nth-child(even),
+		.photo-stream-item:nth-child(3n),
+		.photo-stream-item:nth-child(3n + 1) {
+			max-width: 100%;
+		}
+
+		.photo-stream-item:nth-child(even) {
+			margin-top: 1.5rem;
+		}
+	}
+
+	@include breakpoint('<=small') {
+		.photo-stream-intro {
+			margin-bottom: 1.5rem;
+		}
+
+		.photo-stream-list {
+			grid-template-columns: minmax(0, 1fr);
+			row-gap: 1.5rem;
+		}
+
+		.photo-stream-item,
+		.photo-stream-item.is-portrait,
+		.photo-stream-item:nth-child(even),
+		.photo-stream-item:nth-child(3n),
+		.photo-stream-item:nth-child(3n + 1) {
+			justify-self: stretch;
+			margin-top: 0;
+			max-width: 100%;
 		}
 	}
