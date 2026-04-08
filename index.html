@@ -33,10 +33,10 @@
 							</p>
 							<h1>David McAllister</h1>
 							<p class="major">I'm a PhD student at UC Berkeley advised by Prof. <a href=https://people.eecs.berkeley.edu/~kanazawa/>Angjoo Kanazawa</a>. I'm interested in <strongyellow>generative modeling</strongyellow>, <stronggreen>robotics</stronggreen> and <strongviolet>imaging</strongviolet>.</p>
-							<ul class="actions stacked">
-								<li><a href="https://drive.google.com/file/d/1q3GfC_XXsr193J8Yl6V5vXq_PzovKH2-/view?usp=sharing" target="_blank" class="button big wide smooth-scroll-middle icon solid fa-download">Resume</a></li>
+							<ul class="actions stacked" hidden>
+								<li><a href="https://drive.google.com/file/d/1q3GfC_XXsr193J8Yl6V5vXq_PzovKH2-/view?usp=sharing" target="_blank" class="button big wide smooth-scroll-middle icon solid fa-download">Résumé</a></li>
 							</ul>
-							<ul class="icons">
+							<ul class="icons" hidden>
 								<li><a href="https://www.linkedin.com/in/davidrmcallister" target="_blank" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 								<li><a href="https://github.com/mcallisterdavid" target="_blank" class="icon brands style2 fa-github"></i><span class="label">Email</span></a></li>
 								<li><a href="https://scholar.google.com/citations?user=X5NSuikAAAAJ&hl=en" target="_blank" class="icon solid style2 fa-graduation-cap"><span class="label">Google Scholar</span></a></li>
@@ -57,148 +57,170 @@
 							<div class="publication-lead">
 								<div>
 									<h2>Selected Publications</h2>
-									<p>A research snapshot across diffusion models, computational imaging, and 3D generation. For the complete list, visit my Google Scholar profile.</p>
+									<!-- <p>For the complete list, visit my Google Scholar profile.</p> -->
 								</div>
-								<a href="https://scholar.google.com/citations?user=X5NSuikAAAAJ&hl=en" target="_blank" class="button icon solid fa-graduation-cap">Google Scholar</a>
+								<a href="https://scholar.google.com/citations?user=X5NSuikAAAAJ&hl=en" target="_blank" class="publication-scholar-link icon solid fa-graduation-cap">Google Scholar</a>
 							</div>
 							<div class="index publication-list">
-								<section class="publication-entry">
-									<header>
-										<span class="pub-number">01</span>
-										<div class="pub-meta">
-											<span class="pub-meta-primary">In Submission</span>
-											<span>2025</span>
-										</div>
-									</header>
+									<section class="publication-entry">
+										<header>
+												<span class="pub-number">01</span>
+											<div class="pub-meta">
+												<span class="pub-meta-primary">ICLR 2026</span>
+											</div>
+										</header>
 									<div class="content">
 										<article class="pub-card">
 											<div class="pub-layout">
-												<div class="pub-media tone-cyan">
+												<div class="pub-media">
 													<div class="pub-media-frame">
-														<span class="pub-media-tag">Video / Demo</span>
-														<span class="pub-play icon solid fa-play" aria-hidden="true"></span>
+														<video autoplay muted loop playsinline preload="metadata">
+															<source src="images/fpo_website_thumbnail-card.mp4" type="video/mp4" />
+														</video>
 													</div>
 												</div>
 												<div class="pub-body">
-													<h3 class="pub-title">Decentralized Diffusion Models</h3>
-													<p class="pub-authors"><strong>D. McAllister*</strong>, M. Tancik, J. Song, A. Kanazawa</p>
+													<h3 class="pub-title">Flow Matching Policy Gradients</h3>
+													<p class="pub-description">Redirect flow (FM) towards high reward actions (PG)</p>
+													<p class="pub-authors"><strong>David McAllister*</strong>, Songwei Ge*, Brent Yi*, Chung Min Kim, Ethan Weber, Hongsuk Choi, Haiwen Feng, Angjoo Kanazawa</p>
 													<div class="pub-links">
-														<a href="https://arxiv.org/abs/2501.05450" target="_blank">arXiv</a>
+														<a href="https://arxiv.org/abs/2507.21053" target="_blank">arXiv</a>
+														<a href="https://flowreinforce.github.io/" target="_blank">Blog</a>
 													</div>
 												</div>
 											</div>
 										</article>
 									</div>
 								</section>
-								<section class="publication-entry">
-									<header>
-										<span class="pub-number">02</span>
-										<div class="pub-meta">
-											<span class="pub-meta-primary">NeurIPS</span>
-											<span>2024</span>
+									<section class="publication-entry">
+										<header>
+												<span class="pub-number">02</span>
+											<div class="pub-meta">
+												<span class="pub-meta-primary">CVPR 2025</span>
+											</div>
+										</header>
+										<div class="content">
+											<article class="pub-card">
+												<div class="pub-layout">
+													<div class="pub-media">
+														<div class="pub-media-frame">
+															<video autoplay muted loop playsinline preload="metadata">
+																<source src="images/ddm_teaser-card.mp4" type="video/mp4" />
+															</video>
+														</div>
+													</div>
+													<div class="pub-body">
+														<h3 class="pub-title">Decentralized Diffusion Models</h3>
+														<p class="pub-description">Training diffusion models across distributed clients without centralized data sharing.</p>
+														<p class="pub-authors"><strong>D. McAllister*</strong>, M. Tancik, J. Song, A. Kanazawa</p>
+														<div class="pub-links">
+															<a href="https://arxiv.org/abs/2501.05450" target="_blank">arXiv</a>
+															<a href="https://decentralizeddiffusion.github.io/" target="_blank">Blog</a>
+														</div>
+													</div>
+												</div>
+											</article>
 										</div>
-									</header>
+									</section>
+									<section class="publication-entry">
+										<header>
+											<span class="pub-number">03</span>
+											<div class="pub-meta">
+												<span class="pub-meta-primary">CoRL 2025</span>
+											</div>
+										</header>
+										<div class="content">
+											<article class="pub-card">
+												<div class="pub-layout">
+													<div class="pub-media">
+														<div class="pub-media-frame">
+															<video autoplay muted loop playsinline preload="metadata">
+																<source src="https://www.videomimic.net/figs/videomimic_teaser.mp4" type="video/mp4" />
+															</video>
+														</div>
+													</div>
+													<div class="pub-body">
+														<h3 class="pub-title">Visual imitation enables contextual humanoid control from monocular videos</h3>
+														<p class="pub-description">CoRL 2025 Best Student Paper Award</p>
+														<p class="pub-authors">A. Allshire*, H. Choi*, J. Zhang*, <strong>D. McAllister*</strong>, A. Zhang, C. M. Kim, T. Darrell, P. Abbeel, J. Malik, A. Kanazawa</p>
+														<div class="pub-links">
+															<a href="https://arxiv.org/abs/2505.03729" target="_blank">arXiv</a>
+															<a href="https://www.videomimic.net/" target="_blank">Project</a>
+														</div>
+													</div>
+												</div>
+											</article>
+										</div>
+									</section>
+									<section class="publication-entry">
+										<header>
+											<span class="pub-number">04</span>
+											<div class="pub-meta">
+												<span class="pub-meta-primary">NeurIPS 2024</span>
+											</div>
+										</header>
 									<div class="content">
 										<article class="pub-card">
-											<div class="pub-layout">
-												<div class="pub-media tone-violet">
-													<div class="pub-media-frame">
-														<span class="pub-media-tag">Video / Demo</span>
-														<span class="pub-play icon solid fa-play" aria-hidden="true"></span>
-													</div>
-												</div>
-												<div class="pub-body">
-													<h3 class="pub-title">Rethinking Score Distillation as a Bridge Between Image Distributions</h3>
-													<p class="pub-authors"><strong>D. McAllister*</strong>, S. Ge*, J. Huang, D. Jacobs, A. Efros, A. Holynski, A. Kanazawa</p>
-													<div class="pub-links">
-														<a href="https://arxiv.org/abs/2406.09417" target="_blank">arXiv</a>
-													</div>
-												</div>
+											<h3 class="pub-title">Rethinking Score Distillation as a Bridge Between Image Distributions</h3>
+											<p class="pub-description">A distribution-matching view of score distillation for text-to-3D generation.</p>
+											<p class="pub-authors"><strong>D. McAllister*</strong>, S. Ge*, J. Huang, D. Jacobs, A. Efros, A. Holynski, A. Kanazawa</p>
+											<div class="pub-links">
+												<a href="https://arxiv.org/abs/2406.09417" target="_blank">arXiv</a>
 											</div>
 										</article>
 									</div>
-								</section>
-								<section class="publication-entry">
-									<header>
-										<span class="pub-number">03</span>
-										<div class="pub-meta">
-											<span class="pub-meta-primary">SPIE</span>
-											<span>2023</span>
-										</div>
-									</header>
+									</section>
+										<section class="publication-entry">
+											<header>
+												<span class="pub-number">05</span>
+												<div class="pub-meta">
+													<span class="pub-meta-primary">SPIE 2023</span>
+												</div>
+										</header>
 									<div class="content">
 										<article class="pub-card">
-											<div class="pub-layout">
-												<div class="pub-media tone-rose">
-													<div class="pub-media-frame">
-														<span class="pub-media-tag">Video / Demo</span>
-														<span class="pub-play icon solid fa-play" aria-hidden="true"></span>
-													</div>
-												</div>
-												<div class="pub-body">
-													<h3 class="pub-title">SeidelNet: an aberration-informed deep learning model for spatially varying deblurring</h3>
-													<p class="pub-authors">E. Whang*, <strong>D. McAllister*</strong>, A. Reddy, A. Kohli, and L. Waller</p>
-													<div class="pub-links">
-														<a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12438/124380Y/SeidelNet--an-aberration-informed-deep-learning-model-for-spatially/10.1117/12.2650416.short" target="_blank">Publication</a>
-													</div>
-												</div>
+											<h3 class="pub-title">SeidelNet: an aberration-informed deep learning model for spatially varying deblurring</h3>
+											<p class="pub-description">Aberration-aware deblurring for spatially varying image degradation.</p>
+											<p class="pub-authors">E. Whang*, <strong>D. McAllister*</strong>, A. Reddy, A. Kohli, and L. Waller</p>
+											<div class="pub-links">
+												<a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12438/124380Y/SeidelNet--an-aberration-informed-deep-learning-model-for-spatially/10.1117/12.2650416.short" target="_blank">Publication</a>
 											</div>
 										</article>
 									</div>
-								</section>
-								<section class="publication-entry">
-									<header>
-										<span class="pub-number">04</span>
-										<div class="pub-meta">
-											<span class="pub-meta-primary">arXiv</span>
-											<span>2022</span>
-										</div>
-									</header>
+									</section>
+										<section class="publication-entry">
+											<header>
+												<span class="pub-number">06</span>
+												<div class="pub-meta">
+													<span class="pub-meta-primary">Nature Methods 2025</span>
+												</div>
+										</header>
 									<div class="content">
 										<article class="pub-card">
-											<div class="pub-layout">
-												<div class="pub-media tone-green">
-													<div class="pub-media-frame">
-														<span class="pub-media-tag">Video / Demo</span>
-														<span class="pub-play icon solid fa-play" aria-hidden="true"></span>
-													</div>
-												</div>
-												<div class="pub-body">
-													<h3 class="pub-title">Ring Deconvolution Microscopy</h3>
-													<p class="pub-authors">A. Kohli*, A. Angelopoulos*, <strong>D. McAllister</strong>, E. Whang, S. You, K. Yanny, and L. Waller</p>
-													<div class="pub-links">
-														<a href="https://arxiv.org/abs/2206.08928" target="_blank">arXiv</a>
-													</div>
-												</div>
+											<h3 class="pub-title">Ring Deconvolution Microscopy</h3>
+												<p class="pub-description">Fast spatially varying aberration correction for microscopy via rotationally symmetric ring deconvolution.</p>
+											<p class="pub-authors">A. Kohli*, A. Angelopoulos*, <strong>D. McAllister</strong>, E. Whang, S. You, K. Yanny, and L. Waller</p>
+											<div class="pub-links">
+												<a href="https://arxiv.org/abs/2206.08928" target="_blank">arXiv</a>
 											</div>
 										</article>
 									</div>
-								</section>
-								<section class="publication-entry">
-									<header>
-										<span class="pub-number">05</span>
-										<div class="pub-meta">
-											<span class="pub-meta-primary">SIGGRAPH</span>
-											<span>2023</span>
-										</div>
-									</header>
+									</section>
+										<section class="publication-entry">
+											<header>
+												<span class="pub-number">07</span>
+												<div class="pub-meta">
+													<span class="pub-meta-primary">SIGGRAPH 2023</span>
+												</div>
+										</header>
 									<div class="content">
 										<article class="pub-card">
-											<div class="pub-layout">
-												<div class="pub-media tone-blue">
-													<div class="pub-media-frame">
-														<span class="pub-media-tag">Video / Demo</span>
-														<span class="pub-play icon solid fa-play" aria-hidden="true"></span>
-													</div>
-												</div>
-												<div class="pub-body">
-													<h3 class="pub-title">Nerfstudio: A Modular Framework for Neural Radiance Field Development</h3>
-													<p class="pub-authors">M. Tancik*, E. Weber*, E. Ng*, R. Li, B. Yi, J. Kerr, T. Wang, A. Kristoffersen, J. Austin, K. Salahi, A. Ahuja, <strong>D. McAllister</strong>, and A. Kanazawa</p>
-													<div class="pub-links">
-														<a href="https://arxiv.org/abs/2302.04264" target="_blank">arXiv</a>
-														<a href="https://github.com/nerfstudio-project/nerfstudio" target="_blank">GitHub</a>
-													</div>
-												</div>
+											<h3 class="pub-title">Nerfstudio: A Modular Framework for Neural Radiance Field Development</h3>
+											<p class="pub-description">An open-source framework for building, training, and evaluating NeRF pipelines.</p>
+											<p class="pub-authors">M. Tancik*, E. Weber*, E. Ng*, R. Li, B. Yi, J. Kerr, T. Wang, A. Kristoffersen, J. Austin, K. Salahi, A. Ahuja, <strong>D. McAllister</strong>, and A. Kanazawa</p>
+											<div class="pub-links">
+												<a href="https://arxiv.org/abs/2302.04264" target="_blank">arXiv</a>
+												<a href="https://github.com/nerfstudio-project/nerfstudio" target="_blank">GitHub</a>
 											</div>
 										</article>
 									</div>
@@ -255,7 +277,7 @@
 											<ul>
 												<li>Developed <strong>deep learning models</strong> to measure the development of fibrosis in cross-sectional scans of diabetic mice</li>
 											</ul>
-											<p><em>For more information, please refer to my resume above.</em></p>
+											<p><em>For more information, please refer to my résumé above.</em></p>
 
 										</div>
 									</section>
